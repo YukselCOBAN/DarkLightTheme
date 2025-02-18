@@ -1,0 +1,54 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:grid; /*grid:ızgara*/
+    place-items:center;
+    transition: background .5s ease ; /*geçişler yumuşak olsun diye*/  
+}
+
+.mode{
+    width:70px;
+    height:35px;
+    background-color:#111;
+    border-radius: 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position: relative;
+    padding: 5px;
+    box-sizing:border-box;
+    transform: scale(1.2); /*büyüme efekti*/
+    transition: background .5s ease;
+
+    .moon{
+        color:#111;
+        width:30px;
+        height:30px;
+        background-image: url("C:/Users/chelv/OneDrive/Belgeler/PROJELER/DarkLightThemeHTMLCSSJSVsCode/moon.svg"); /* Eğer o klasörde ise */
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .sun{
+        width:30px;
+        height:30px;
+        background-image: url("C:/Users/chelv/OneDrive/Belgeler/PROJELER/DarkLightThemeHTMLCSSJSVsCode/sun.svg"); /* Eğer o klasörde ise */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ball{
+        border-radius: 50px;
+        position:absolute; /*relative:normal akış,absolute:normal akışın dışına çıkabılır ogeler*/
+        width:25px;
+        height:25px;
+        background-color: #fff;
+        transition: all .0.5s ease;
+    }
+}
